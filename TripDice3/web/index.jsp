@@ -11,7 +11,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>TripHelper</title>
+        <title>Trip Helper</title>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -42,383 +42,373 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                <div class="btn-group btn-input clearfix">
-                                    <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-                                        <span data-bind="label">Select One</span> <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Akron, OH</a></li>
-                                        <li><a href="#">Albuquerque, NM</a></li>
-                                        <li><a href="#">Anaheim, CA</a></li>
-                                        <li><a href="#">Anchorage, AK</a></li>
-                                        <li><a href="#">Arlington, TX</a></li>
-                                        <li><a href="#">ArlingtonCDP, VA</a></li>
-                                        <li><a href="#">Atlanta, GA</a></li>
-                                        <li><a href="#">Aurora, CO</a></li>
-                                        <li><a href="#">Austin, TX</a></li>
-                                        <li><a href="#">Bakersfield, CA</a></li>
-                                        <li><a href="#">Baltimore, MD</a></li>
-                                        <li><a href="#">BatonRouge, LA</a></li>
-                                        <li><a href="#">Birmingham, AL</a></li>
-                                        <li><a href="#">Boston, MA</a></li>
-                                        <li><a href="#">Buffalo, NY</a></li>
-                                        <li><a href="#">Charlotte, NC</a></li>
-                                        <li><a href="#">Chicago, IL</a></li>
-                                        <li><a href="#">Cincinnati, OH</a></li>
-                                        <li><a href="#">Cleveland, OH</a></li>
-                                        <li><a href="#">ColoradoSprings, CO</a></li>
-                                        <li><a href="#">Columbus, GA, </a></li>
-                                        <li><a href="#">Columbus, OH</a></li>
-                                        <li><a href="#">CorpusChristi, TX</a></li>
-                                        <li><a href="#">Dallas, TX</a></li>
-                                        <li><a href="#">Dayton, OH</a></li>
-                                        <li><a href="#">Denver, CO</a></li>
-                                        <li><a href="#">DesMoines, IA</a></li>
-                                        <li><a href="#">Detroit, MI </a></li>
-                                        <li><a href="#">ElPaso, TX</a></li>
-                                        <li><a href="#">FortWayne, IN</a></li>
-                                        <li><a href="#">FortWorth, TX</a></li>
-                                        <li><a href="#">Fremont, CA</a></li>
-                                        <li><a href="#">Fresno, CA</a></li>
-                                        <li><a href="#">Garland, TX</a></li>
-                                        <li><a href="#">Glendale, CA</a></li>
-                                        <li><a href="#">GrandRapids, MI</a></li>
-                                        <li><a href="#">Greensboro, NC</a></li>
-                                        <li><a href="#">Hialeah, FL</a></li>
-                                        <li><a href="#">HonoluluCDP, HI</a></li>
-                                        <li><a href="#">Houston, TX </a></li>
-                                        <li><a href="#">HuntingtonBeach, CA</a></li>
-                                        <li><a href="#">Indianapolis, IN</a></li>
-                                        <li><a href="#">Jackson, MS</a></li>
-                                        <li><a href="#">Jacksonville, FL</a></li>
-                                        <li><a href="#">Jersey, NJ</a></li>
-                                        <li><a href="#">Kansas, MO</a></li>
-                                        <li><a href="#">LasVegas, NV</a></li>
-                                        <li><a href="#">Lexington-Fayette, KY</a></li>
-                                        <li><a href="#">Lincoln, NE, </a></li>
-                                        <li><a href="#">LittleRock, AR</a></li>
-                                        <li><a href="#">LongBeach, CA</a></li>
-                                        <li><a href="#">LosAngeles, CA </a></li>
-                                        <li><a href="#">Louisville, KY</a></li>
-                                        <li><a href="#">Lubbock, TX</a></li>
-                                        <li><a href="#">Madison, WI, </a></li>
-                                        <li><a href="#">Memphis, TN</a></li>
-                                        <li><a href="#">Mesa, AZ</a></li>
-                                        <li><a href="#">Miami, FL</a></li>
-                                        <li><a href="#">Milwaukee, WI</a></li>
-                                        <li><a href="#">Minneapolis, MN</a></li>
-                                        <li><a href="#">Mobile, AL</a></li>
-                                        <li><a href="#">Montgomery, AL</a></li>
-                                        <li><a href="#">Nashville-Davidson, TN</a></li>
-                                        <li><a href="#">Newark, NJ</a></li>
-                                        <li><a href="#">NewOrleans, LA</a></li>
-                                        <li><a href="#">NewYork, NY</a></li>
-                                        <li><a href="#">Norfolk, VA</a></li>
-                                        <li><a href="#">Oakland, CA</a></li>
-                                        <li><a href="#">Oklahoma, OK, </a></li>
-                                        <li><a href="#">Omaha, NE</a></li>
-                                        <li><a href="#">Philadelphia, PA</a></li>
-                                        <li><a href="#">Phoenix, AZ</a></li>
-                                        <li><a href="#">Pittsburgh, PA</a></li>
-                                        <li><a href="#">Portland, OR</a></li>
-                                        <li><a href="#">Raleigh, NC</a></li>
-                                        <li><a href="#">Richmond, VA</a></li>
-                                        <li><a href="#">Riverside, CA</a></li>
-                                        <li><a href="#">Rochester, NY</a></li>
-                                        <li><a href="#">Sacramento, CA</a></li>
-                                        <li><a href="#">SanAntonio, TX</a></li>
-                                        <li><a href="#">SanDiego, CA</a></li>
-                                        <li><a href="#">SanFrancisco, CA</a></li>
-                                        <li><a href="#">SanJose, CA</a></li>
-                                        <li><a href="#">SantaAna, CA</a></li>
-                                        <li><a href="#">Seattle, WA</a></li>
-                                        <li><a href="#">Shreveport, LA</a></li>
-                                        <li><a href="#">Spokane, WA</a></li>
-                                        <li><a href="#">StLouis, MO</a></li>
-                                        <li><a href="#">Stockton, CA</a></li>
-                                        <li><a href="#">StPaul, MN</a></li>
-                                        <li><a href="#">StPetersburg, FL</a></li>
-                                        <li><a href="#">Tacoma, WA</a></li>
-                                        <li><a href="#">Tampa, FL</a></li>
-                                        <li><a href="#">Toledo, OH</a></li>
-                                        <li><a href="#">Tucson, AZ</a></li>
-                                        <li><a href="#">Tulsa, OK</a></li>
-                                        <li><a href="#">VirginiaBeach, VA</a></li>
-                                        <li><a href="#">Washington, DC</a></li>
-                                        <li><a href="#">Wichita, KS</a></li>
-                                        <li><a href="#">Yonkers, NY</a></li>
-                                    </ul>
-                                </div>
-                                </ul>
-                                </li>
-                                </ul>
-                                </th>
-                                <th><li class="dropdown">
-                                    <a href="#" <a href="#" data-toggle="dropdown"class="dropdown-toggle">City, State<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-
-                                            <li><a href="#">Akron, OH</a></li>
-                                            <li><a href="#">Albuquerque, NM</a></li>
-                                            <li><a href="#">Anaheim, CA</a></li>
-                                            <li><a href="#">Anchorage, AK</a></li>
-                                            <li><a href="#">Arlington, TX</a></li>
-                                            <li><a href="#">ArlingtonCDP, VA</a></li>
-                                            <li><a href="#">Atlanta, GA</a></li>
-                                            <li><a href="#">Aurora, CO</a></li>
-                                            <li><a href="#">Austin, TX</a></li>
-                                            <li><a href="#">Bakersfield, CA</a></li>
-                                            <li><a href="#">Baltimore, MD</a></li>
-                                            <li><a href="#">BatonRouge, LA</a></li>
-                                            <li><a href="#">Birmingham, AL</a></li>
-                                            <li><a href="#">Boston, MA</a></li>
-                                            <li><a href="#">Buffalo, NY</a></li>
-                                            <li><a href="#">Charlotte, NC</a></li>
-                                            <li><a href="#">Chicago, IL</a></li>
-                                            <li><a href="#">Cincinnati, OH</a></li>
-                                            <li><a href="#">Cleveland, OH</a></li>
-                                            <li><a href="#">ColoradoSprings, CO</a></li>
-                                            <li><a href="#">Columbus, GA, </a></li>
-                                            <li><a href="#">Columbus, OH</a></li>
-                                            <li><a href="#">CorpusChristi, TX</a></li>
-                                            <li><a href="#">Dallas, TX</a></li>
-                                            <li><a href="#">Dayton, OH</a></li>
-                                            <li><a href="#">Denver, CO</a></li>
-                                            <li><a href="#">DesMoines, IA</a></li>
-                                            <li><a href="#">Detroit, MI </a></li>
-                                            <li><a href="#">ElPaso, TX</a></li>
-                                            <li><a href="#">FortWayne, IN</a></li>
-                                            <li><a href="#">FortWorth, TX</a></li>
-                                            <li><a href="#">Fremont, CA</a></li>
-                                            <li><a href="#">Fresno, CA</a></li>
-                                            <li><a href="#">Garland, TX</a></li>
-                                            <li><a href="#">Glendale, CA</a></li>
-                                            <li><a href="#">GrandRapids, MI</a></li>
-                                            <li><a href="#">Greensboro, NC</a></li>
-                                            <li><a href="#">Hialeah, FL</a></li>
-                                            <li><a href="#">HonoluluCDP, HI</a></li>
-                                            <li><a href="#">Houston, TX </a></li>
-                                            <li><a href="#">HuntingtonBeach, CA</a></li>
-                                            <li><a href="#">Indianapolis, IN</a></li>
-                                            <li><a href="#">Jackson, MS</a></li>
-                                            <li><a href="#">Jacksonville, FL</a></li>
-                                            <li><a href="#">Jersey, NJ</a></li>
-                                            <li><a href="#">Kansas, MO</a></li>
-                                            <li><a href="#">LasVegas, NV</a></li>
-                                            <li><a href="#">Lexington-Fayette, KY</a></li>
-                                            <li><a href="#">Lincoln, NE, </a></li>
-                                            <li><a href="#">LittleRock, AR</a></li>
-                                            <li><a href="#">LongBeach, CA</a></li>
-                                            <li><a href="#">LosAngeles, CA </a></li>
-                                            <li><a href="#">Louisville, KY</a></li>
-                                            <li><a href="#">Lubbock, TX</a></li>
-                                            <li><a href="#">Madison, WI, </a></li>
-                                            <li><a href="#">Memphis, TN</a></li>
-                                            <li><a href="#">Mesa, AZ</a></li>
-                                            <li><a href="#">Miami, FL</a></li>
-                                            <li><a href="#">Milwaukee, WI</a></li>
-                                            <li><a href="#">Minneapolis, MN</a></li>
-                                            <li><a href="#">Mobile, AL</a></li>
-                                            <li><a href="#">Montgomery, AL</a></li>
-                                            <li><a href="#">Nashville-Davidson, TN</a></li>
-                                            <li><a href="#">Newark, NJ</a></li>
-                                            <li><a href="#">NewOrleans, LA</a></li>
-                                            <li><a href="#">NewYork, NY</a></li>
-                                            <li><a href="#">Norfolk, VA</a></li>
-                                            <li><a href="#">Oakland, CA</a></li>
-                                            <li><a href="#">Oklahoma, OK, </a></li>
-                                            <li><a href="#">Omaha, NE</a></li>
-                                            <li><a href="#">Philadelphia, PA</a></li>
-                                            <li><a href="#">Phoenix, AZ</a></li>
-                                            <li><a href="#">Pittsburgh, PA</a></li>
-                                            <li><a href="#">Portland, OR</a></li>
-                                            <li><a href="#">Raleigh, NC</a></li>
-                                            <li><a href="#">Richmond, VA</a></li>
-                                            <li><a href="#">Riverside, CA</a></li>
-                                            <li><a href="#">Rochester, NY</a></li>
-                                            <li><a href="#">Sacramento, CA</a></li>
-                                            <li><a href="#">SanAntonio, TX</a></li>
-                                            <li><a href="#">SanDiego, CA</a></li>
-                                            <li><a href="#">SanFrancisco, CA</a></li>
-                                            <li><a href="#">SanJose, CA</a></li>
-                                            <li><a href="#">SantaAna, CA</a></li>
-                                            <li><a href="#">Seattle, WA</a></li>
-                                            <li><a href="#">Shreveport, LA</a></li>
-                                            <li><a href="#">Spokane, WA</a></li>
-                                            <li><a href="#">StLouis, MO</a></li>
-                                            <li><a href="#">Stockton, CA</a></li>
-                                            <li><a href="#">StPaul, MN</a></li>
-                                            <li><a href="#">StPetersburg, FL</a></li>
-                                            <li><a href="#">Tacoma, WA</a></li>
-                                            <li><a href="#">Tampa, FL</a></li>
-                                            <li><a href="#">Toledo, OH</a></li>
-                                            <li><a href="#">Tucson, AZ</a></li>
-                                            <li><a href="#">Tulsa, OK</a></li>
-                                            <li><a href="#">VirginiaBeach, VA</a></li>
-                                            <li><a href="#">Washington, DC</a></li>
-                                            <li><a href="#">Wichita, KS</a></li>
-                                            <li><a href="#">Yonkers, NY</a></li>
-
-                                        </ul>
-                                </li>
-                                </ul>
-                                </th>
-                                <th><li class="dropdown">
-                                    <a href="#" <a href="#" data-toggle="dropdown"class="dropdown-toggle">City, State<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Akron, OH</a></li>
-                                            <li><a href="#">Albuquerque, NM</a></li>
-                                            <li><a href="#">Anaheim, CA</a></li>
-                                            <li><a href="#">Anchorage, AK</a></li>
-                                            <li><a href="#">Arlington, TX</a></li>
-                                            <li><a href="#">ArlingtonCDP, VA</a></li>
-                                            <li><a href="#">Atlanta, GA</a></li>
-                                            <li><a href="#">Aurora, CO</a></li>
-                                            <li><a href="#">Austin, TX</a></li>
-                                            <li><a href="#">Bakersfield, CA</a></li>
-                                            <li><a href="#">Baltimore, MD</a></li>
-                                            <li><a href="#">BatonRouge, LA</a></li>
-                                            <li><a href="#">Birmingham, AL</a></li>
-                                            <li><a href="#">Boston, MA</a></li>
-                                            <li><a href="#">Buffalo, NY</a></li>
-                                            <li><a href="#">Charlotte, NC</a></li>
-                                            <li><a href="#">Chicago, IL</a></li>
-                                            <li><a href="#">Cincinnati, OH</a></li>
-                                            <li><a href="#">Cleveland, OH</a></li>
-                                            <li><a href="#">ColoradoSprings, CO</a></li>
-                                            <li><a href="#">Columbus, GA, </a></li>
-                                            <li><a href="#">Columbus, OH</a></li>
-                                            <li><a href="#">CorpusChristi, TX</a></li>
-                                            <li><a href="#">Dallas, TX</a></li>
-                                            <li><a href="#">Dayton, OH</a></li>
-                                            <li><a href="#">Denver, CO</a></li>
-                                            <li><a href="#">DesMoines, IA</a></li>
-                                            <li><a href="#">Detroit, MI </a></li>
-                                            <li><a href="#">ElPaso, TX</a></li>
-                                            <li><a href="#">FortWayne, IN</a></li>
-                                            <li><a href="#">FortWorth, TX</a></li>
-                                            <li><a href="#">Fremont, CA</a></li>
-                                            <li><a href="#">Fresno, CA</a></li>
-                                            <li><a href="#">Garland, TX</a></li>
-                                            <li><a href="#">Glendale, CA</a></li>
-                                            <li><a href="#">GrandRapids, MI</a></li>
-                                            <li><a href="#">Greensboro, NC</a></li>
-                                            <li><a href="#">Hialeah, FL</a></li>
-                                            <li><a href="#">HonoluluCDP, HI</a></li>
-                                            <li><a href="#">Houston, TX </a></li>
-                                            <li><a href="#">HuntingtonBeach, CA</a></li>
-                                            <li><a href="#">Indianapolis, IN</a></li>
-                                            <li><a href="#">Jackson, MS</a></li>
-                                            <li><a href="#">Jacksonville, FL</a></li>
-                                            <li><a href="#">Jersey, NJ</a></li>
-                                            <li><a href="#">Kansas, MO</a></li>
-                                            <li><a href="#">LasVegas, NV</a></li>
-                                            <li><a href="#">Lexington-Fayette, KY</a></li>
-                                            <li><a href="#">Lincoln, NE, </a></li>
-                                            <li><a href="#">LittleRock, AR</a></li>
-                                            <li><a href="#">LongBeach, CA</a></li>
-                                            <li><a href="#">LosAngeles, CA </a></li>
-                                            <li><a href="#">Louisville, KY</a></li>
-                                            <li><a href="#">Lubbock, TX</a></li>
-                                            <li><a href="#">Madison, WI, </a></li>
-                                            <li><a href="#">Memphis, TN</a></li>
-                                            <li><a href="#">Mesa, AZ</a></li>
-                                            <li><a href="#">Miami, FL</a></li>
-                                            <li><a href="#">Milwaukee, WI</a></li>
-                                            <li><a href="#">Minneapolis, MN</a></li>
-                                            <li><a href="#">Mobile, AL</a></li>
-                                            <li><a href="#">Montgomery, AL</a></li>
-                                            <li><a href="#">Nashville-Davidson, TN</a></li>
-                                            <li><a href="#">Newark, NJ</a></li>
-                                            <li><a href="#">NewOrleans, LA</a></li>
-                                            <li><a href="#">NewYork, NY</a></li>
-                                            <li><a href="#">Norfolk, VA</a></li>
-                                            <li><a href="#">Oakland, CA</a></li>
-                                            <li><a href="#">Oklahoma, OK, </a></li>
-                                            <li><a href="#">Omaha, NE</a></li>
-                                            <li><a href="#">Philadelphia, PA</a></li>
-                                            <li><a href="#">Phoenix, AZ</a></li>
-                                            <li><a href="#">Pittsburgh, PA</a></li>
-                                            <li><a href="#">Portland, OR</a></li>
-                                            <li><a href="#">Raleigh, NC</a></li>
-                                            <li><a href="#">Richmond, VA</a></li>
-                                            <li><a href="#">Riverside, CA</a></li>
-                                            <li><a href="#">Rochester, NY</a></li>
-                                            <li><a href="#">Sacramento, CA</a></li>
-                                            <li><a href="#">SanAntonio, TX</a></li>
-                                            <li><a href="#">SanDiego, CA</a></li>
-                                            <li><a href="#">SanFrancisco, CA</a></li>
-                                            <li><a href="#">SanJose, CA</a></li>
-                                            <li><a href="#">SantaAna, CA</a></li>
-                                            <li><a href="#">Seattle, WA</a></li>
-                                            <li><a href="#">Shreveport, LA</a></li>
-                                            <li><a href="#">Spokane, WA</a></li>
-                                            <li><a href="#">StLouis, MO</a></li>
-                                            <li><a href="#">Stockton, CA</a></li>
-                                            <li><a href="#">StPaul, MN</a></li>
-                                            <li><a href="#">StPetersburg, FL</a></li>
-                                            <li><a href="#">Tacoma, WA</a></li>
-                                            <li><a href="#">Tampa, FL</a></li>
-                                            <li><a href="#">Toledo, OH</a></li>
-                                            <li><a href="#">Tucson, AZ</a></li>
-                                            <li><a href="#">Tulsa, OK</a></li>
-                                            <li><a href="#">VirginiaBeach, VA</a></li>
-                                            <li><a href="#">Washington, DC</a></li>
-                                            <li><a href="#">Wichita, KS</a></li>
-                                            <li><a href="#">Yonkers, NY</a></li>
-
-                                        </ul>
-                                </li>
-                                </ul>
-                                </th>
-                                </tr>
+                                        <th>
+                                            <select name="city1" selected="City, State" id="city1" value ="city1">
+                                                <option selected >City, State</option>
+                                                <option value="Akron, OH">Akron, OH</option>
+                                                <option value="Albuquerque, NM">Albuquerque, NM</option>
+                                                <option value="Anaheim, CA">Anaheim, CA</option>
+                                                <option value="Anchorage, AK">Anchorage, AK</option>
+                                                <option value="Arlington, TX">Arlington, TX</option>
+                                                <option value="ArlingtonCDP, VA">ArlingtonCDP, VA</option>
+                                                <option value="Atlanta, GA">Atlanta, GA</option>
+                                                <option value="Aurora, CO">Aurora, CO</option>
+                                                <option value="Austin, TX">Austin, TX</option>
+                                                <option value="Bakersfield, CA">Bakersfield, CA</option>
+                                                <option value="Baltimore, MD">Baltimore, MD</option>
+                                                <option value="BatonRouge, LA">BatonRouge, LA</option>
+                                                <option value="Birmingham, AL">Birmingham, AL</option>
+                                                <option value="Boston, MA">Boston, MA</option>
+                                                <option value="Buffalo, NY">Buffalo, NY</option>
+                                                <option value="Charlotte, NC">Charlotte, NC</option>
+                                                <option value="Chicago, IL">Chicago, IL</option>
+                                                <option value="Cincinnati, OH">Cincinnati, OH</option>
+                                                <option value="Cleveland, OH">Cleveland, OH</option>
+                                                <option value="ColoradoSprings, CO">ColoradoSprings, CO</option>
+                                                <option value="Columbus, GA, ">Columbus, GA, </option>
+                                                <option value="Columbus, OH">Columbus, OH</option>
+                                                <option value="CorpusChristi, TX">CorpusChristi, TX</option>
+                                                <option value="Dallas, TX">Dallas, TX</option>
+                                                <option value="Dayton, OH">Dayton, OH</option>
+                                                <option value="Denver, CO">Denver, CO</option>
+                                                <option value="DesMoines, IA">DesMoines, IA</option>
+                                                <option value="Detroit, MI ">Detroit, MI </option>
+                                                <option value="ElPaso, TX">ElPaso, TX</option>
+                                                <option value="FortWayne, IN">FortWayne, IN</option>
+                                                <option value="FortWorth, TX">FortWorth, TX</option>
+                                                <option value="Fremont, CA">Fremont, CA</option>
+                                                <option value="Fresno, CA">Fresno, CA</option>
+                                                <option value="Garland, TX">Garland, TX</option>
+                                                <option value="Glendale, CA">Glendale, CA</option>
+                                                <option value="GrandRapids, MI">GrandRapids, MI</option>
+                                                <option value="Greensboro, NC">Greensboro, NC</option>
+                                                <option value="Hialeah, FL">Hialeah, FL</option>
+                                                <option value="HonoluluCDP, HI">HonoluluCDP, HI</option>
+                                                <option value="Houston, TX ">Houston, TX </option>
+                                                <option value="HuntingtonBeach, CA">HuntingtonBeach, CA</option>
+                                                <option value="Indianapolis, IN">Indianapolis, IN</option>
+                                                <option value="Jackson, MS">Jackson, MS</option>
+                                                <option value="Jacksonville, FL">Jacksonville, FL</option>
+                                                <option value="Jersey, NJ">Jersey, NJ</option>
+                                                <option value="Kansas, MO">Kansas, MO</option>
+                                                <option value="LasVegas, NV">LasVegas, NV</option>
+                                                <option value="Lexington-Fayette, KY">Lexington-Fayette, KY</option>
+                                                <option value="Lincoln, NE, ">Lincoln, NE, </option>
+                                                <option value="LittleRock, AR">LittleRock, AR</option>
+                                                <option value="LongBeach, CA">LongBeach, CA</option>
+                                                <option value="LosAngeles, CA ">LosAngeles, CA </option>
+                                                <option value="Louisville, KY">Louisville, KY</option>
+                                                <option value="Lubbock, TX">Lubbock, TX</option>
+                                                <option value="Madison, WI, ">Madison, WI, </option>
+                                                <option value="Memphis, TN">Memphis, TN</option>
+                                                <option value="Mesa, AZ">Mesa, AZ</option>
+                                                <option value="Miami, FL">Miami, FL</option>
+                                                <option value="Milwaukee, WI">Milwaukee, WI</option>
+                                                <option value="Minneapolis, MN">Minneapolis, MN</option>
+                                                <option value="Mobile, AL">Mobile, AL</option>
+                                                <option value="Montgomery, AL">Montgomery, AL</option>
+                                                <option value="Nashville-Davidson, TN">Nashville-Davidson, TN</option>
+                                                <option value="Newark, NJ">Newark, NJ</option>
+                                                <option value="NewOrleans, LA">NewOrleans, LA</option>
+                                                <option value="NewYork, NY">NewYork, NY</option>
+                                                <option value="Norfolk, VA">Norfolk, VA</option>
+                                                <option value="Oakland, CA">Oakland, CA</option>
+                                                <option value="Oklahoma, OK, ">Oklahoma, OK, </option>
+                                                <option value="Omaha, NE">Omaha, NE</option>
+                                                <option value="Philadelphia, PA">Philadelphia, PA</option>
+                                                <option value="Phoenix, AZ">Phoenix, AZ</option>
+                                                <option value="Pittsburgh, PA">Pittsburgh, PA</option>
+                                                <option value="Portland, OR">Portland, OR</option>
+                                                <option value="Raleigh, NC">Raleigh, NC</option>
+                                                <option value="Richmond, VA">Richmond, VA</option>
+                                                <option value="Riverside, CA">Riverside, CA</option>
+                                                <option value="Rochester, NY">Rochester, NY</option>
+                                                <option value="Sacramento, CA">Sacramento, CA</option>
+                                                <option value="SanAntonio, TX">SanAntonio, TX</option>
+                                                <option value="SanDiego, CA">SanDiego, CA</option>
+                                                <option value="SanFrancisco, CA">SanFrancisco, CA</option>
+                                                <option value="SanJose, CA">SanJose, CA</option>
+                                                <option value="SantaAna, CA">SantaAna, CA</option>
+                                                <option value="Seattle, WA">Seattle, WA</option>
+                                                <option value="Shreveport, LA">Shreveport, LA</option>
+                                                <option value="Spokane, WA">Spokane, WA</option>
+                                                <option value="StLouis, MO">StLouis, MO</option>
+                                                <option value="Stockton, CA">Stockton, CA</option>
+                                                <option value="StPaul, MN">StPaul, MN</option>
+                                                <option value="StPetersburg, FL">StPetersburg, FL</option>
+                                                <option value="Tacoma, WA">Tacoma, WA</option>
+                                                <option value="Tampa, FL">Tampa, FL</option>
+                                                <option value="Toledo, OH">Toledo, OH</option>
+                                                <option value="Tucson, AZ">Tucson, AZ</option>
+                                                <option value="Tulsa, OK">Tulsa, OK</option>
+                                                <option value="VirginiaBeach, VA">VirginiaBeach, VA</option>
+                                                <option value="Washington, DC">Washington, DC</option>
+                                                <option value="Wichita, KS">Wichita, KS</option>
+                                                <option value="Yonkers, NY">Yonkers, NY</option>
+                                            </select>
+                                        </th>
+                                        <th>
+                                            <select name="city2" selected="City, State" id="city1" value ="city1">
+                                                <option selected >City, State</option>
+                                                <option value="Akron, OH">Akron, OH</option>
+                                                <option value="Albuquerque, NM">Albuquerque, NM</option>
+                                                <option value="Anaheim, CA">Anaheim, CA</option>
+                                                <option value="Anchorage, AK">Anchorage, AK</option>
+                                                <option value="Arlington, TX">Arlington, TX</option>
+                                                <option value="ArlingtonCDP, VA">ArlingtonCDP, VA</option>
+                                                <option value="Atlanta, GA">Atlanta, GA</option>
+                                                <option value="Aurora, CO">Aurora, CO</option>
+                                                <option value="Austin, TX">Austin, TX</option>
+                                                <option value="Bakersfield, CA">Bakersfield, CA</option>
+                                                <option value="Baltimore, MD">Baltimore, MD</option>
+                                                <option value="BatonRouge, LA">BatonRouge, LA</option>
+                                                <option value="Birmingham, AL">Birmingham, AL</option>
+                                                <option value="Boston, MA">Boston, MA</option>
+                                                <option value="Buffalo, NY">Buffalo, NY</option>
+                                                <option value="Charlotte, NC">Charlotte, NC</option>
+                                                <option value="Chicago, IL">Chicago, IL</option>
+                                                <option value="Cincinnati, OH">Cincinnati, OH</option>
+                                                <option value="Cleveland, OH">Cleveland, OH</option>
+                                                <option value="ColoradoSprings, CO">ColoradoSprings, CO</option>
+                                                <option value="Columbus, GA, ">Columbus, GA, </option>
+                                                <option value="Columbus, OH">Columbus, OH</option>
+                                                <option value="CorpusChristi, TX">CorpusChristi, TX</option>
+                                                <option value="Dallas, TX">Dallas, TX</option>
+                                                <option value="Dayton, OH">Dayton, OH</option>
+                                                <option value="Denver, CO">Denver, CO</option>
+                                                <option value="DesMoines, IA">DesMoines, IA</option>
+                                                <option value="Detroit, MI ">Detroit, MI </option>
+                                                <option value="ElPaso, TX">ElPaso, TX</option>
+                                                <option value="FortWayne, IN">FortWayne, IN</option>
+                                                <option value="FortWorth, TX">FortWorth, TX</option>
+                                                <option value="Fremont, CA">Fremont, CA</option>
+                                                <option value="Fresno, CA">Fresno, CA</option>
+                                                <option value="Garland, TX">Garland, TX</option>
+                                                <option value="Glendale, CA">Glendale, CA</option>
+                                                <option value="GrandRapids, MI">GrandRapids, MI</option>
+                                                <option value="Greensboro, NC">Greensboro, NC</option>
+                                                <option value="Hialeah, FL">Hialeah, FL</option>
+                                                <option value="HonoluluCDP, HI">HonoluluCDP, HI</option>
+                                                <option value="Houston, TX ">Houston, TX </option>
+                                                <option value="HuntingtonBeach, CA">HuntingtonBeach, CA</option>
+                                                <option value="Indianapolis, IN">Indianapolis, IN</option>
+                                                <option value="Jackson, MS">Jackson, MS</option>
+                                                <option value="Jacksonville, FL">Jacksonville, FL</option>
+                                                <option value="Jersey, NJ">Jersey, NJ</option>
+                                                <option value="Kansas, MO">Kansas, MO</option>
+                                                <option value="LasVegas, NV">LasVegas, NV</option>
+                                                <option value="Lexington-Fayette, KY">Lexington-Fayette, KY</option>
+                                                <option value="Lincoln, NE, ">Lincoln, NE, </option>
+                                                <option value="LittleRock, AR">LittleRock, AR</option>
+                                                <option value="LongBeach, CA">LongBeach, CA</option>
+                                                <option value="LosAngeles, CA ">LosAngeles, CA </option>
+                                                <option value="Louisville, KY">Louisville, KY</option>
+                                                <option value="Lubbock, TX">Lubbock, TX</option>
+                                                <option value="Madison, WI, ">Madison, WI, </option>
+                                                <option value="Memphis, TN">Memphis, TN</option>
+                                                <option value="Mesa, AZ">Mesa, AZ</option>
+                                                <option value="Miami, FL">Miami, FL</option>
+                                                <option value="Milwaukee, WI">Milwaukee, WI</option>
+                                                <option value="Minneapolis, MN">Minneapolis, MN</option>
+                                                <option value="Mobile, AL">Mobile, AL</option>
+                                                <option value="Montgomery, AL">Montgomery, AL</option>
+                                                <option value="Nashville-Davidson, TN">Nashville-Davidson, TN</option>
+                                                <option value="Newark, NJ">Newark, NJ</option>
+                                                <option value="NewOrleans, LA">NewOrleans, LA</option>
+                                                <option value="NewYork, NY">NewYork, NY</option>
+                                                <option value="Norfolk, VA">Norfolk, VA</option>
+                                                <option value="Oakland, CA">Oakland, CA</option>
+                                                <option value="Oklahoma, OK, ">Oklahoma, OK, </option>
+                                                <option value="Omaha, NE">Omaha, NE</option>
+                                                <option value="Philadelphia, PA">Philadelphia, PA</option>
+                                                <option value="Phoenix, AZ">Phoenix, AZ</option>
+                                                <option value="Pittsburgh, PA">Pittsburgh, PA</option>
+                                                <option value="Portland, OR">Portland, OR</option>
+                                                <option value="Raleigh, NC">Raleigh, NC</option>
+                                                <option value="Richmond, VA">Richmond, VA</option>
+                                                <option value="Riverside, CA">Riverside, CA</option>
+                                                <option value="Rochester, NY">Rochester, NY</option>
+                                                <option value="Sacramento, CA">Sacramento, CA</option>
+                                                <option value="SanAntonio, TX">SanAntonio, TX</option>
+                                                <option value="SanDiego, CA">SanDiego, CA</option>
+                                                <option value="SanFrancisco, CA">SanFrancisco, CA</option>
+                                                <option value="SanJose, CA">SanJose, CA</option>
+                                                <option value="SantaAna, CA">SantaAna, CA</option>
+                                                <option value="Seattle, WA">Seattle, WA</option>
+                                                <option value="Shreveport, LA">Shreveport, LA</option>
+                                                <option value="Spokane, WA">Spokane, WA</option>
+                                                <option value="StLouis, MO">StLouis, MO</option>
+                                                <option value="Stockton, CA">Stockton, CA</option>
+                                                <option value="StPaul, MN">StPaul, MN</option>
+                                                <option value="StPetersburg, FL">StPetersburg, FL</option>
+                                                <option value="Tacoma, WA">Tacoma, WA</option>
+                                                <option value="Tampa, FL">Tampa, FL</option>
+                                                <option value="Toledo, OH">Toledo, OH</option>
+                                                <option value="Tucson, AZ">Tucson, AZ</option>
+                                                <option value="Tulsa, OK">Tulsa, OK</option>
+                                                <option value="VirginiaBeach, VA">VirginiaBeach, VA</option>
+                                                <option value="Washington, DC">Washington, DC</option>
+                                                <option value="Wichita, KS">Wichita, KS</option>
+                                                <option value="Yonkers, NY">Yonkers, NY</option>
+                                            </select>
+                                        </th>
+                                        <th>
+                                            <select name="city3" selected="City, State" id="city1" value ="city1">
+                                                <option selected >City, State</option>
+                                                <option value="Akron, OH">Akron, OH</option>
+                                                <option value="Albuquerque, NM">Albuquerque, NM</option>
+                                                <option value="Anaheim, CA">Anaheim, CA</option>
+                                                <option value="Anchorage, AK">Anchorage, AK</option>
+                                                <option value="Arlington, TX">Arlington, TX</option>
+                                                <option value="ArlingtonCDP, VA">ArlingtonCDP, VA</option>
+                                                <option value="Atlanta, GA">Atlanta, GA</option>
+                                                <option value="Aurora, CO">Aurora, CO</option>
+                                                <option value="Austin, TX">Austin, TX</option>
+                                                <option value="Bakersfield, CA">Bakersfield, CA</option>
+                                                <option value="Baltimore, MD">Baltimore, MD</option>
+                                                <option value="BatonRouge, LA">BatonRouge, LA</option>
+                                                <option value="Birmingham, AL">Birmingham, AL</option>
+                                                <option value="Boston, MA">Boston, MA</option>
+                                                <option value="Buffalo, NY">Buffalo, NY</option>
+                                                <option value="Charlotte, NC">Charlotte, NC</option>
+                                                <option value="Chicago, IL">Chicago, IL</option>
+                                                <option value="Cincinnati, OH">Cincinnati, OH</option>
+                                                <option value="Cleveland, OH">Cleveland, OH</option>
+                                                <option value="ColoradoSprings, CO">ColoradoSprings, CO</option>
+                                                <option value="Columbus, GA, ">Columbus, GA, </option>
+                                                <option value="Columbus, OH">Columbus, OH</option>
+                                                <option value="CorpusChristi, TX">CorpusChristi, TX</option>
+                                                <option value="Dallas, TX">Dallas, TX</option>
+                                                <option value="Dayton, OH">Dayton, OH</option>
+                                                <option value="Denver, CO">Denver, CO</option>
+                                                <option value="DesMoines, IA">DesMoines, IA</option>
+                                                <option value="Detroit, MI ">Detroit, MI </option>
+                                                <option value="ElPaso, TX">ElPaso, TX</option>
+                                                <option value="FortWayne, IN">FortWayne, IN</option>
+                                                <option value="FortWorth, TX">FortWorth, TX</option>
+                                                <option value="Fremont, CA">Fremont, CA</option>
+                                                <option value="Fresno, CA">Fresno, CA</option>
+                                                <option value="Garland, TX">Garland, TX</option>
+                                                <option value="Glendale, CA">Glendale, CA</option>
+                                                <option value="GrandRapids, MI">GrandRapids, MI</option>
+                                                <option value="Greensboro, NC">Greensboro, NC</option>
+                                                <option value="Hialeah, FL">Hialeah, FL</option>
+                                                <option value="HonoluluCDP, HI">HonoluluCDP, HI</option>
+                                                <option value="Houston, TX ">Houston, TX </option>
+                                                <option value="HuntingtonBeach, CA">HuntingtonBeach, CA</option>
+                                                <option value="Indianapolis, IN">Indianapolis, IN</option>
+                                                <option value="Jackson, MS">Jackson, MS</option>
+                                                <option value="Jacksonville, FL">Jacksonville, FL</option>
+                                                <option value="Jersey, NJ">Jersey, NJ</option>
+                                                <option value="Kansas, MO">Kansas, MO</option>
+                                                <option value="LasVegas, NV">LasVegas, NV</option>
+                                                <option value="Lexington-Fayette, KY">Lexington-Fayette, KY</option>
+                                                <option value="Lincoln, NE, ">Lincoln, NE, </option>
+                                                <option value="LittleRock, AR">LittleRock, AR</option>
+                                                <option value="LongBeach, CA">LongBeach, CA</option>
+                                                <option value="LosAngeles, CA ">LosAngeles, CA </option>
+                                                <option value="Louisville, KY">Louisville, KY</option>
+                                                <option value="Lubbock, TX">Lubbock, TX</option>
+                                                <option value="Madison, WI, ">Madison, WI, </option>
+                                                <option value="Memphis, TN">Memphis, TN</option>
+                                                <option value="Mesa, AZ">Mesa, AZ</option>
+                                                <option value="Miami, FL">Miami, FL</option>
+                                                <option value="Milwaukee, WI">Milwaukee, WI</option>
+                                                <option value="Minneapolis, MN">Minneapolis, MN</option>
+                                                <option value="Mobile, AL">Mobile, AL</option>
+                                                <option value="Montgomery, AL">Montgomery, AL</option>
+                                                <option value="Nashville-Davidson, TN">Nashville-Davidson, TN</option>
+                                                <option value="Newark, NJ">Newark, NJ</option>
+                                                <option value="NewOrleans, LA">NewOrleans, LA</option>
+                                                <option value="NewYork, NY">NewYork, NY</option>
+                                                <option value="Norfolk, VA">Norfolk, VA</option>
+                                                <option value="Oakland, CA">Oakland, CA</option>
+                                                <option value="Oklahoma, OK, ">Oklahoma, OK, </option>
+                                                <option value="Omaha, NE">Omaha, NE</option>
+                                                <option value="Philadelphia, PA">Philadelphia, PA</option>
+                                                <option value="Phoenix, AZ">Phoenix, AZ</option>
+                                                <option value="Pittsburgh, PA">Pittsburgh, PA</option>
+                                                <option value="Portland, OR">Portland, OR</option>
+                                                <option value="Raleigh, NC">Raleigh, NC</option>
+                                                <option value="Richmond, VA">Richmond, VA</option>
+                                                <option value="Riverside, CA">Riverside, CA</option>
+                                                <option value="Rochester, NY">Rochester, NY</option>
+                                                <option value="Sacramento, CA">Sacramento, CA</option>
+                                                <option value="SanAntonio, TX">SanAntonio, TX</option>
+                                                <option value="SanDiego, CA">SanDiego, CA</option>
+                                                <option value="SanFrancisco, CA">SanFrancisco, CA</option>
+                                                <option value="SanJose, CA">SanJose, CA</option>
+                                                <option value="SantaAna, CA">SantaAna, CA</option>
+                                                <option value="Seattle, WA">Seattle, WA</option>
+                                                <option value="Shreveport, LA">Shreveport, LA</option>
+                                                <option value="Spokane, WA">Spokane, WA</option>
+                                                <option value="StLouis, MO">StLouis, MO</option>
+                                                <option value="Stockton, CA">Stockton, CA</option>
+                                                <option value="StPaul, MN">StPaul, MN</option>
+                                                <option value="StPetersburg, FL">StPetersburg, FL</option>
+                                                <option value="Tacoma, WA">Tacoma, WA</option>
+                                                <option value="Tampa, FL">Tampa, FL</option>
+                                                <option value="Toledo, OH">Toledo, OH</option>
+                                                <option value="Tucson, AZ">Tucson, AZ</option>
+                                                <option value="Tulsa, OK">Tulsa, OK</option>
+                                                <option value="VirginiaBeach, VA">VirginiaBeach, VA</option>
+                                                <option value="Washington, DC">Washington, DC</option>
+                                                <option value="Wichita, KS">Wichita, KS</option>
+                                                <option value="Yonkers, NY">Yonkers, NY</option>
+                                            </select>
+                                        </th>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><li class="dropdown">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Event Type<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">conferences</a></li>
-                                        <li><a href="#"> conventions</a></li>
-                                        <li><a href="#"> entertainment</a></li>
-                                        <li><a href="#"> fundraisers</a></li>
-                                        <li><a href="#"> meetings</a></li>
-                                        <li><a href="#"> other</a></li>
-                                        <li><a href="#"> performances</a></li>
-                                        <li><a href="#"> reunions</a></li>
-                                        <li><a href="#"> sales</a></li>
-                                        <li><a href="#"> seminars</a></li>
-                                        <li><a href="#"> social</a></li>
-                                        <li><a href="#"> sports</a></li>
-                                        <li><a href="#"> tradeshows</a></li>
-                                        <li><a href="#"> travel</a></li>
-                                        <li><a href="#"> religion</a></li>
-                                        <li><a href="#"> fairs</a></li>
-                                        <li><a href="#"> food</a></li>
-                                        <li><a href="#"> music</a></li>
-                                        <li><a href="#"> recreation</a></li>
-                                        </td>			
-                                        <td>BAND 4</td>
-                                        <td>BAND 3</td>
-                                        <td>BAND 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td height="29">Cost</td>
-                                            <td>$</td>
-                                            <td>$$</td>
-                                            <td>$$$</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Weather</td>
-                                            <td>Sunny</td>
-                                            <td>Rainy</td>
-                                            <td>Snowy</td>
-                                        </tr>
-                                        </tbody>
-                            </table>
-                            </td>
-                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Event Type<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <option value="conferences"></option>
+                                <option value=" conventions"></option>
+                                <option value=" entertainment"></option>
+                                <option value=" fundraisers"></option>
+                                <option value=" meetings"></option>
+                                <option value=" other"></option>
+                                <option value=" performances"></option>
+                                <option value=" reunions"></option>
+                                <option value=" sales"></option>
+                                <option value=" seminars"></option>
+                                <option value=" social"></option>
+                                <option value=" sports"></option>
+                                <option value=" tradeshows"></option>
+                                <option value=" travel"></option>
+                                <option value=" religion"></option>
+                                <option value=" fairs"></option>
+                                <option value=" food"></option>
+                                <option value=" music"></option>
+                                <option value=" recreation"></option>
+                                </td>			
+                                <td>BAND 4</td>
+                                <td>BAND 3</td>
+                                <td>BAND 1</td>
+                                </tr>
+                                <tr>
+                                    <td height="29">Cost</td>
+                                    <td>$</td>
+                                    <td>$$</td>
+                                    <td>$$$</td>
+                                </tr>
+                                <tr>
+                                    <td>Weather</td>
+                                    <td>Sunny</td>
+                                    <td>Rainy</td>
+                                    <td>Snowy</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </td>
+                                </tr>
+                                <form action="FetchEvent" method="GET">
+                                    <input type="submit" value="submit">
+                                </form>
+                       
 
 
-                            </body>
-                            </html>
+                                </body>
+                                </html>
 

@@ -50,7 +50,8 @@ public class FetchEvent extends HttpServlet {
         response.setContentType("text;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            String city = request.getParameter("city");
+            String city = request.getParameter("city1");
+            System.out.println("CCCCCCC"+city);
 //            String category = request.getParameter("category");
 //            String date = request.getParameter("date");
 //            String city = "San+Francisco";
@@ -71,9 +72,9 @@ public class FetchEvent extends HttpServlet {
             StringBuilder jsonString = new StringBuilder();
             while ((line = in.readLine()) != null) {
                 jsonString.append(line);
+                System.out.print(jsonString.toString());
             }
             res = jsonString.toString();
-            res = res.replace("//", "");
             System.out.println(res);
             
             JsonParserFactory factory = JsonParserFactory.getInstance();
@@ -81,9 +82,6 @@ public class FetchEvent extends HttpServlet {
             Map jsonData = parser.parseJson(res);
             
             Map events = (Map)jsonData.get("events");
-            
-//            System.out.println("HHHHHH"+name);
- 
 
         } finally {
             out.close();
