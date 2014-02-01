@@ -24,6 +24,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ContainerFactory;
 import org.json.simple.parser.JSONParser;
@@ -54,23 +55,30 @@ public class FetchEvent extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
 
-            String[] cityAndState = request.getParameter("city1").split(",");
-            String city = cityAndState[0].trim();
-            String state = cityAndState[1].trim();
+            String[] cityAndState1 = request.getParameter("city1").split(",");
+            String city1 = cityAndState1[0].trim();
+            String state1 = cityAndState1[1].trim();
+
+            String[] cityAndState2 = request.getParameter("city2").split(",");
+            String city2 = cityAndState2[0].trim();
+            String state2 = cityAndState2[1].trim();
+
+            String[] cityAndState3 = request.getParameter("city3").split(",");
+            String city3 = cityAndState3[0].trim();
+            String state3 = cityAndState3[1].trim();
 
 //            String category = request.getParameter("category");
 //            String date = request.getParameter("date");
 //            String city = "San+Francisco";
-            String category = "music";
+            String category = request.getParameter("event");
             String date = "2014-01-01%202014-03-20";
 
             String res = "";
 
-
             response.setContentType("text;charset=UTF-8");
 
             URL url;
-            url = new URL("http://www.eventbrite.com/json/event_search?app_key=LBSJIMTFWLD7YKFJQL&city=" + city + "&date=" + date + "&category=" + category);
+            url = new URL("http://www.eventbrite.com/json/event_search?app_key=LBSJIMTFWLD7YKFJQL&city=" + city1 + "&date=" + date + "&category=" + category);
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -80,46 +88,90 @@ public class FetchEvent extends HttpServlet {
                 jsonString.append(line);
             }
             res = jsonString.toString();
+
             System.out.println("!!!!!!!!!!!");
+            // event name given randomly now...
+            String[] eventNames = new String[5];
+            eventNames[0] = "Black Box Baroque";
+            eventNames[1] = "Biscuits And Blues";
+            eventNames[2] = "LEVYdance";
+            eventNames[3] = "SLOANE";
+            eventNames[4] = "Emma Back, SSOL ~ She Sings Out Loud";
 
-//            Object obj = JSONValue.parse(res);
-//            JSONArray array = (JSONArray)obj;
-//            System.out.println(array.get(1));
-
-
-            JSONParser parser = new JSONParser();
-            ContainerFactory containerFactory = new ContainerFactory() {
-             
-                @Override
-                public Map createObjectContainer() {
-                    return new LinkedHashMap();
-                }
-
-                @Override
-                public List creatArrayContainer() {
-                   return new LinkedList();
-                }
-            };
-
-            try {
-                Map json = (Map) parser.parse(res, containerFactory);
-                Iterator iter = json.entrySet().iterator();
-                System.out.println("==iterate result==");
-                while (iter.hasNext()) {
-                    Map.Entry entry = (Map.Entry) iter.next();
-                    System.out.println(entry.getKey() + "=>" + entry.getValue());
-                }
-
-            } catch (ParseException pe) {
-                pe.printStackTrace();
+            Cost[] costs = new Cost[3];
+            for(int i=0; i<costs.length;i++){
+                costs[i] = new Cost();
             }
-
+            String cost0 = costs[0].getCost("Akron, OH");
+            String cost1 = costs[1].getCost("Boston, MA");
+            String cost2 = costs[2].getCost("New York, NY");
+            
+            
+            //print out response
+            out.println("<!DOCTYPE html>"); 
+            out.println("<html>");
+            out.println("<head>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<table width= \"875\" align=\"center\" cellpadding=\"0\" cellspace=\"0\"\\>\n" +
+"                <tr>\n" +
+"                    <td align=\"center\">\n" +
+"                <body> \n" +
+"                    <div class=\"bs-example\">\n" +
+"                        <nav id=\"myNavbar\" class=\"navbar navbar-default\" role=\"navigation\">\n" +
+"                            <div class=\"container\">\n" +
+"                                <div class=\"navbar-header\">\n" +
+"                                        <span class=\"icon-bar\"></span>\n" +
+"                                        <span class=\"icon-bar\"></span>\n" +
+"                                        <span class=\"icon-bar\"></span>\n" +
+"                                    </button>\n" +
+"                                    <a class=\"navbar-brand\" href=\"#\">Trip Dice</a>\n" +
+"                                </div>\n" +
+"                                <table class=\"table table-striped\" width=\"647\">\n" +
+"\n" +
+"                                    <thead>\n" +
+"                                        <tr>\n" +
+"                                            <th></th>\n" +
+"                                            <th></th>\n" +
+"                                            <th></th>\n" +
+"                                            <th></th>\n" +
+"                                    </thead>\n" +
+"                                    <tbody>\n" +
+"                                        <tr>\n" +
+"                                            <td>Event Name</td>			\n" +
+"                                            <td id=\"band1\">"+eventNames[0]+"    </td>\n" +
+"                                            <td id =\"band2\">"+eventNames[1]+"    </td>\n" +
+"                                            <td id=\"band3\">"+eventNames[2]+"    </td>\n" +
+"                                        </tr>\n" +
+"                                        <tr>\n" +
+"                                            <td height=\"29\">Cost</td>\n" +
+"                                            <td id=\"cost1\">"+"$ 86.91"+"</td>\n" +
+"                                            <td id=\"cost2\">"+"$ 72.39"+"</td>\n" +
+"                                            <td id=\"cost3\">"+"$ 86.06"+"</td>\n" +
+"                                        </tr>\n" +
+"                                        <tr>\n" +
+"                                            <td>Weather</td>\n" +
+"                                            <td>Sunny</td>\n" +
+"                                            <td>Rainy</td>\n" +
+"                                            <td>Snowy</td>\n" +
+"                                        </tr>\n" +
+"                                    </tbody>\n" +
+"                                </table>\n" +
+"                                </td>\n" +
+"                                </tr>\n" +
+"                                </body>"
+                    );
+            out.println("</body>");
+            out.println("</html>");
+        
         } finally {
             out.close();
         }
-    }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+        
+    }
+// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+
     /**
      * Handles the HTTP
      * <code>GET</code> method.
