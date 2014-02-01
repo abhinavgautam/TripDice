@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <center>
+        <form action="FetchEvent" method="GET">
         <table width= "875" align="center" cellpadding="0" cellspace="0"\>
             <tr>
                 <td align="center">
@@ -403,9 +404,9 @@
                                 </table>
                                 </td>
                                 </tr>
-                                <form action="FetchEvent" method="GET">
-                                    <input type="submit" value="submit">
-                                </form>
+                                
+                  <input type="submit" value="submit">
+            </form>
                        
 
 

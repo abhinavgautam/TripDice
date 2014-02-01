@@ -3,8 +3,6 @@
  * and open the template in the editor.
  */
 
-import com.json.parsers.JSONParser;
-import com.json.parsers.JsonParserFactory;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -25,6 +23,11 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.ContainerFactory;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.xml.sax.InputSource;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -50,8 +53,11 @@ public class FetchEvent extends HttpServlet {
         response.setContentType("text;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            String city = request.getParameter("city1");
-            System.out.println("CCCCCCC"+city);
+
+            String[] cityAndState = request.getParameter("city1").split(",");
+            String city = cityAndState[0].trim();
+            String state = cityAndState[1].trim();
+
 //            String category = request.getParameter("category");
 //            String date = request.getParameter("date");
 //            String city = "San+Francisco";
@@ -64,24 +70,49 @@ public class FetchEvent extends HttpServlet {
             response.setContentType("text;charset=UTF-8");
 
             URL url;
-            url = new URL("https://www.eventbrite.com/json/event_search?app_key=LBSJIMTFWLD7YKFJQL&city=" + city + "&date=" + date + "&category=" + category);
+            url = new URL("http://www.eventbrite.com/json/event_search?app_key=LBSJIMTFWLD7YKFJQL&city=" + city + "&date=" + date + "&category=" + category);
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            String line=null;
+            String line = null;
             StringBuilder jsonString = new StringBuilder();
             while ((line = in.readLine()) != null) {
                 jsonString.append(line);
-                System.out.print(jsonString.toString());
             }
             res = jsonString.toString();
-            System.out.println(res);
-            
-            JsonParserFactory factory = JsonParserFactory.getInstance();
-            JSONParser parser = factory.newJsonParser();
-            Map jsonData = parser.parseJson(res);
-            
-            Map events = (Map)jsonData.get("events");
+            System.out.println("!!!!!!!!!!!");
+
+//            Object obj = JSONValue.parse(res);
+//            JSONArray array = (JSONArray)obj;
+//            System.out.println(array.get(1));
+
+
+            JSONParser parser = new JSONParser();
+            ContainerFactory containerFactory = new ContainerFactory() {
+             
+                @Override
+                public Map createObjectContainer() {
+                    return new LinkedHashMap();
+                }
+
+                @Override
+                public List creatArrayContainer() {
+                   return new LinkedList();
+                }
+            };
+
+            try {
+                Map json = (Map) parser.parse(res, containerFactory);
+                Iterator iter = json.entrySet().iterator();
+                System.out.println("==iterate result==");
+                while (iter.hasNext()) {
+                    Map.Entry entry = (Map.Entry) iter.next();
+                    System.out.println(entry.getKey() + "=>" + entry.getValue());
+                }
+
+            } catch (ParseException pe) {
+                pe.printStackTrace();
+            }
 
         } finally {
             out.close();
@@ -128,6 +159,4 @@ public class FetchEvent extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-
 }
