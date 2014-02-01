@@ -1,0 +1,93 @@
+Akron, OH; 58.85
+Albuquerque, NM; 66.76
+Allentown, PA; 69.70
+Anchorage, AK; 75.80
+Ann Arbor, MI; 69.28
+Arlington, VA; 81.75
+Asheville, NC; 78.25
+Atlanta, GA; 64.07
+Austin, TX; 78.11
+Baltimore, MD; 72.20
+Boise, ID; 88.72
+Boston, MA; 86.91
+Boyton Beach, FL; 70.72
+Buffalo, NY; 70.77
+Charlotte, NC; 69.25
+Chattanooga, TN; 56.24
+Chicago, IL; 71.66
+Cincinnati, OH; 63.46
+Cleveland, OH; 77.07
+Columbus, OH; 70.78
+Dallas, TX; 76.46
+Denver, CO; 70.44
+Des Moines, IA; 71.45
+Detroit, MI; 63.63
+Fairfax, VA; 66.27
+Fayetteville, AR; 53.88
+Fontana, CA; 71.01
+Fort Lauderdale, FL; 75.06
+Fort Myers, FL; 71.45
+Fort Worth, TX; 64.80
+Germantown, MD; 65.39
+Grand Rapids, MI; 76.53
+Greenville, SC; 80.61
+Harrisburg, PA; 80.03
+Honolulu, HI; 106.60
+Houston, TX; 80.57
+Huntsville, AL; 63.93
+Indianapolis, IN; 74.05
+Iowa City, IA; 80.44
+Kansas City, MO; 72.66
+Knoxville, TN; 66.64
+Las Vegas, NV; 72.39
+Lincoln, NE; 76.07
+Los Angeles, CA; 89.84
+Madison, WI; 87.11
+Manchester, NH; 65.02
+McAllen, TX; 77.04
+Medford, OR; 68.39
+Miami, FL; 95.85
+Milwaukee, WI; 65.57
+Minneapolis, MN; 74.19
+Modesto, CA; 74.16
+Nashville, TN; 72.56
+New Orleans, LA; 75.98
+New York, NY; 101.67
+Newark, NJ; 91.40
+Oklahoma City, OK; 66.92
+Omaha, NE; 67.99
+Orlando, FL; 70.70
+Philadelphia, PA; 75.51
+Phoenix, AZ; 74.39
+Pittsburgh, PA; 71.34
+Portland, OR; 68.76
+Raleigh, NC; 69.55
+Reno, NV; 53.27
+Richmond, VA; 82.65
+Ridgecrest, CA; 71.52
+Riverside, CA; 72.07
+Roanoke, VA; 68.07
+Rochester, NY; 70.23
+Rockville, MD; ?
+Sacramento, CA; 77.94
+Saint Louis, MO; 63.09
+Saint Petersburg, FL; 83.13
+Salt Lake City, UT; 68.21
+San Antonio, TX; 73.84
+San Diego, CA; 82.27
+San Francisco, CA; 101.35
+San Jose, CA; 67.85
+Santa Barbara, CA; 104.50
+Seattle, WA; 86.06
+Spokane, WA; 76.68
+Tallahassee, FL; 73.82
+Tampa, FL; 74.71
+Tucson, AZ; 82.35
+Tulsa, OK; 61.28
+Urbana, IL; 63.62
+Virginia Beach, VA; 76.03
+Washington, DC; 84.18
+Wichita, KS; 63.61
+Winston-salem, NC; ?
+Woodbridge, VA; 74.70
+Yonkers, NY; 124.33
