@@ -364,25 +364,25 @@
                                 <td><li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Event Type<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <option value="conferences"></option>
-                                <option value=" conventions"></option>
-                                <option value=" entertainment"></option>
-                                <option value=" fundraisers"></option>
-                                <option value=" meetings"></option>
-                                <option value=" other"></option>
-                                <option value=" performances"></option>
-                                <option value=" reunions"></option>
-                                <option value=" sales"></option>
-                                <option value=" seminars"></option>
-                                <option value=" social"></option>
-                                <option value=" sports"></option>
-                                <option value=" tradeshows"></option>
-                                <option value=" travel"></option>
-                                <option value=" religion"></option>
-                                <option value=" fairs"></option>
-                                <option value=" food"></option>
-                                <option value=" music"></option>
-                                <option value=" recreation"></option>
+                               <option value="conferences">conferences</option>
+                               <option value="conventions">conventions</option>
+                               <option value="entertainment">entertainment</option>
+                               <option value="fundraisers">fundraisers</option>
+                               <option value="meetings">meetings</option>
+                               <option value="other">other</option>
+                               <option value="performances">performances</option>
+                               <option value="reunions">reunions</option>
+                               <option value="sales">sales</option>
+                               <option value="seminars">seminars</option>
+                               <option value="social">social</option>
+                               <option value="sports">sports</option>
+                               <option value="tradeshows">tradeshows</option>
+                               <option value="travel">travel</option>
+                               <option value="religion">religion</option>
+                               <option value="fairs">fairs</option>
+                               <option value="food">food</option>
+                               <option value="music">music</option>
+                               <option value="recreation">recreation</option>
                                 </td>			
                                 <td>BAND 4</td>
                                 <td>BAND 3</td>
